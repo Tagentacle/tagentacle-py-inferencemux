@@ -4,7 +4,7 @@ import asyncio
 
 import pytest
 
-from tagentacle_py_agent import InferenceMux, MuxState, TriggerSignal
+from tagentacle_py_inferencemux import InferenceMux, MuxState, TriggerSignal
 
 
 @pytest.fixture

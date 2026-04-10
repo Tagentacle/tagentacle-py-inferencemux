@@ -1,5 +1,5 @@
 [project]
-name = "tagentacle-py-agent"
+name = "tagentacle-py-inferencemux"
 version = "0.1.0"
 description = "Agent SDK — Inbox, InferenceMux"
 readme = "README.md"

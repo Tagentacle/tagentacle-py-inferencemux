@@ -1,8 +1,8 @@
 [package]
-name = "python-sdk-agent"
+name = "tagentacle-py-inferencemux"
 version = "0.1.0"
 type = "library"
 description = "Agent SDK — composable agent building blocks"
 
 [dependencies]
-python-sdk-core = { git = "https://github.com/Tagentacle/python-sdk-core.git" }
+tagentacle-py-core = { git = "https://github.com/Tagentacle/tagentacle-py-core.git" }
