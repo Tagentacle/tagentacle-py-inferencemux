@@ -90,3 +90,14 @@ class InferenceMux:
     def has_followup(self) -> bool:
         """True if there are queued followup triggers."""
         return len(self._followup) > 0
+
+    def reset(self) -> None:
+        """Drop all queued followups and return to IDLE.
+
+        Intended for lifecycle deactivate/shutdown paths where any
+        pending inference work should be discarded.
+        """
+        self._followup.clear()
+        self._current = None
+        self._state = MuxState.IDLE
+        self._event.clear()
